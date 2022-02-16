@@ -1,4 +1,4 @@
-## :rocket: Sobre o desafio
+## :rocket: Sobre o desafio:3-1
 
 Nesse desafio criei um servidor que tem duas rotas que devem retornar o conteúdo dos html gerados no desafio 2-3 (páginas de `Cursos` e `Sobre`). Além disso, deve ser implementando um arquivo padrão (layout.njk) que reaproveite o código em comum entre esses dois e também um arquivo que sirva uma página de erro 404.
 
@@ -36,4 +36,10 @@ _Erro 404 é comum aparecer em páginas da internet, quando não foi encontrado 
    <br>
    <br>
 
-# LaunchBase-Desafio-3-1
+## :rocket: Sobre o desafio:3-2
+
+Nesse desafio foi atualizado a maneira em que os arquivos com informações de cursos e descrição serão exebidos, agora de forma dinâmica.
+
+## Mudança
+
+Foi acresentado um arquivo na raiz do projeto `data.js` que agora contem as irfomação dos cursos
