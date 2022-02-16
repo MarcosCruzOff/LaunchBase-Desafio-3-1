@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <style>
+      body {
+        background-color: #7159c1;
+        width: 940px;
+        height: 100vh;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+{% endblock styles %}
+
+    
+ {% block content %}
+  
+    <img class="mainlogo" src="logoMain.png" alt="" />
+    <h1>rocketseat</h1>
+    <h3>
+      Acelere cada etapa da sua carreira em programação O mapa completo para
+      você impulsionar sua evolução e acessar as melhores oportunidades da sua
+      carreira como dev. Somos uma plataforma completa de aprendizado contínuo
+      em programação Não importa se você está começando do zero ou se tem
+      décadas de experiência como dev. Você vai encontrar o caminho para estar
+      entre os melhores e se manter atualizado nesse universo dinâmico.
+    </h3>
+    <ul class="geral">
+      <li class="discover">
+        Discover
+        <ul class="escolha">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </li>
+      <li class="ignit">
+        Ignite
+        <ul class="escolha">
+          <li>React-Js</li>
+          <li>ReactNative</li>
+          <li>NodeJs</li>
+          <li>Fluter</li>
+          <li>Elixir</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="Novo">
+      <a href="https://www.instagram.com/rocketseat_oficial/">Instagram</a>
+      <a href="https://www.facebook.com/rocketseat">Facebook</a>
+      <a href="https://github.com/rocketseat-education">Github</a>
+    </div>
+    
+ {% endblock content %}

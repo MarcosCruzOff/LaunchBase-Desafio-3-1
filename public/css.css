@@ -1,0 +1,189 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #111111;
+}
+
+.links {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   background-color: #7159c1;
+   padding: 30px 0;
+}
+
+.groupo {
+   display: flex;
+}
+
+ul {
+   display: flex;
+}
+
+a {
+   margin: 0 30px 0 30px;
+   padding: 10px 30px 10px 30px;
+   font-family: 'Roboto', sans-serif;
+   color: aliceblue;
+   text-decoration: none;
+   border: 1px solid aliceblue;
+}
+
+.mainlogo {
+   width: 30%;
+   height: 30%;
+   border-radius: 50%;
+   display: flex;
+   margin: 10px auto;
+}
+
+h1 {
+   font-family: 'Robot', sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 16px;
+   text-align: center;
+   margin: 30px 0;
+   color: aliceblue;
+}
+
+h3 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 16px;
+   color: #ffff;
+   text-align: justify;
+   min-width: 440px;
+}
+
+ul {
+   list-style: none;
+}
+
+.escolha {
+   display: flex;
+}
+
+li {
+   padding: 5px 15px 5px 15px;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: 'Roboto', sans-serif;
+   color: aliceblue;
+}
+
+.discover,
+.ignit {
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.escolha li {
+   border: 1px solid black;
+   margin-right: 10px;
+}
+
+.Novo {
+   text-align: center;
+   margin-bottom: 15px;
+   position: absolute;
+   bottom: 0;
+}
+
+.Novo a {
+   margin-right: 20px;
+   color: aliceblue;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+.cards {
+   margin: 100px auto;
+   width: 1250px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+}
+
+.card {
+   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.4);
+   border-radius: 16px;
+   background-color: #111111;
+   cursor: pointer;
+   height: 500px;
+   width: 335px;
+}
+.card img {
+   width: 100%;
+   height: 200px;
+   border-radius: 16px 16px 0 0;
+}
+
+.card h1 {
+   color: #b4b4b4;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+   margin-bottom: 120px;
+   padding: 5px 20px;
+}
+
+.card h4 {
+   color: #b6b7f6;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 18px;
+   padding: 5px 20px;
+}
+
+.card p {
+   color: #b4b4b4;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 400;
+   font-size: 14x;
+   padding: 1px 20px;
+}
+
+.modal-overlay {
+   background-color: rgba(0, 0, 0, 0.7);
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.modal {
+   background-color: white;
+   width: 90%;
+   height: 90%;
+   margin: 5vh auto;
+   position: relative;
+}
+
+.modal .close-modal {
+   color: black;
+   position: absolute;
+   right: 8px;
+   top: 8px;
+   cursor: pointer;
+}
+
+.modal-overlay.ativo {
+   opacity: 1;
+   visibility: visible;
+}
+
+iframe {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 5%;
+}
