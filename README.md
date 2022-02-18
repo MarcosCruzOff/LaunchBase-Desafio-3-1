@@ -24,7 +24,7 @@ _Erro 404 é comum aparecer em páginas da internet, quando não foi encontrado 
 
 ### Arquivos HTML
 
--  `courses.njk`: Arquivo referente à pagina de conteúdos, /courses
+-  `conteudo.njk`: Arquivo referente à pagina de conteúdos, /content
 -  `about.njk`: Arquivo referente à pagina de descrição, /about
 -  `layout.njk`: Arquivo referente à base comum entre as páginas.
 -  `not-found.njk`: Arquivo referente à pagina de erro 404, para quando o usuário digitar um caminho não especificado
@@ -32,7 +32,6 @@ _Erro 404 é comum aparecer em páginas da internet, quando não foi encontrado 
    -  Layout.njk como base
    -  Ter um texto informativo sobre o erro
 
-   <br>
    <br>
    <br>
 
@@ -43,3 +42,29 @@ Nesse desafio foi atualizado a maneira em que os arquivos com informações de c
 ## Mudança
 
 Foi acresentado um arquivo na raiz do projeto `data.js` que agora contem as irfomação dos cursos
+
+   <br>
+   <br>
+
+
+## :rocket: Desafio 3-3: Página de descrição do curso
+
+Nesse desafio foi criada uma nova página de descrição do curso que será chamada no lugar da modal quando o usuário clicar no card do curso.
+
+## Mudanças
+
+Foi acresentado um arquivo na pasta de `views/conteudo` `curso.njk`
+
+-  `curso.njk` o arquivo que contem as descrições dos cursos.
+
+-  Foi crido um novo arquivo na raiz do projeto chamado `curso.js` responsável agora por fornecer os dados
+
+-  `conteudo.njk` passa receber agora os dados do arquivo `cursos.js` e não mais do `data.js` e também tem uma nova estilização
+
+## Demonstração
+
+<div align="center">
+   <img src="./presentation/content.png">
+   <img src="./presentation/curso.png">
+
+</div>

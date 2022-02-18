@@ -1,6 +1,6 @@
 const e = require('express')
 const nunjucks = require('nunjucks')
-const cursos = require('./data')
+const aulas = require('./cursos')
 
 const server = e()
 
@@ -15,11 +15,27 @@ nunjucks.configure('views', {
 
 //Redireciona a rota para a pasta instrutores
 server.get('/', function (req, res) {
-   return res.redirect('/courses')
+   return res.redirect('/content')
 })
 
-server.get('/courses', function (req, res) {
-   return res.render('conteudo/conteudo', { items: cursos })
+server.get('/content', function (req, res) {
+   return res.render('conteudo/conteudo', { items: aulas })
+})
+
+server.get('/curso/:id', function (req, res) {
+   const id = req.params.id
+
+   const aula = aulas.find(function (aula) {
+      if (aula.id === id) {
+         return true
+      }
+   })
+
+   if (!aula) {
+      return res.send('curso não encontrado')
+   }
+
+   return res.render('conteudo/curso', { item: aula })
 })
 
 server.get('/about', function (req, res) {

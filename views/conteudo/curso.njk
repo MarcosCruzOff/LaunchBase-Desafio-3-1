@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+{% block content %}
+   <div class="banner" id="{{ item.id }}">
+      <div class="img" style='background-color:{{ item.corFundo }}'>
+         <img src="{{ item.image }}" alt=""></div>
+         <div class="text">
+            <h2>{{ item.titulo }}</h2>
+            <ul
+               class="descricao">
+               <!-- Através da variavél 'ingrediente' é possivel acessar todos os elementos do Array ingredients, e trazer separado
+               por ',' para cada tag <li> -->
+               {% for p in item.descricao %}
+                  <li>{{ p }}</li>
+               {% endfor %}
+            </ul>
+            <ul class='certificado'>
+               <li>
+                  <p>Total de Alunos</p>
+                  {{ item.totalAluno }}
+                  <span>
+                     <ion-icon name="happy-outline"></ion-icon>
+                  </span>
+               </li>
+               <li>
+                  <p>Atividades</p>
+                  {{ item.atividades }}
+                  <span>
+                     <ion-icon name="barbell-outline"></ion-icon>
+                  </span>
+               </li>
+               <li>
+                  <p>Certificado</p>
+                  {{ item.certificado }}
+                  <span>
+                     <ion-icon name="ribbon-outline"></ion-icon>
+                  </span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      {% block script %}
+         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      {% endblock script %}
+   {% endblock content %}
